@@ -32,7 +32,7 @@ import (
 )
 
 var (
-	model            = resource.DefaultModelFamily.WithModel("explore")
+	Model            = resource.DefaultModelFamily.WithModel("explore")
 	errUnimplemented = errors.New("unimplemented")
 	// The distance a detected obstacle can be from a base to trigger the Move command to stop.
 	lookAheadDistanceMM = 500.
@@ -50,7 +50,7 @@ var (
 func init() {
 	resource.RegisterService(
 		motion.API,
-		model,
+		Model,
 		resource.Registration[motion.Service, *Config]{
 			Constructor: NewExplore,
 			WeakDependencies: []resource.Matcher{

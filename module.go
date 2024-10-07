@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("Kuka Arm Go Module"))
+	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("Motion Random Explore Go Module"))
 }
 
 func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) (err error) {

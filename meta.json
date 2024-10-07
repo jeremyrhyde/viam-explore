@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "jeremyrhyde:viam-explore",
+  "visibility": "public",
+  "url": "https://github.com/jeremyrhyde/viam-explore",
+  "description": "A Viam Go module for random exploration of a base",
+  "models": [
+    {
+      "api": "rdk:services:motion",
+      "model": "jeremyrhyde:motion:viam-explore"
+    }
+  ],
+  "entrypoint": "viam-explore-module.AppImage"
+}
